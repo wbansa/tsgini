@@ -1,0 +1,10 @@
+; tsgini.def : Declares the module parameters for the DLL.
+
+LIBRARY      "TSGINI"
+DESCRIPTION  'TSGINI Windows Dynamic Link Library'
+
+EXPORTS
+	LiesZeiten
+	ZeitenDialog
+    LiesVornach
+	; Explicit exports can go here
