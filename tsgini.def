@@ -1,5 +1,5 @@
 ; tsgini.def : Declares the module parameters for the DLL.
-
+; $Id: tsgini.def,v 1.2 2003-06-25 17:39:55 wobansa Exp $
 LIBRARY      "TSGINI"
 DESCRIPTION  'TSGINI Windows Dynamic Link Library'
 

@@ -3,6 +3,6 @@
 //	stdafx.obj will contain the pre-compiled type information
 
 #include "stdafx.h"
-static const char StdAfxId[] = "$Id: StdAfx.cpp,v 1.2 2003-06-22 19:16:46 wobansa Exp $";
+static char StdAfxId[] = "$Id: StdAfx.cpp,v 1.3 2003-06-25 17:39:55 wobansa Exp $";
 
 

@@ -10,7 +10,7 @@
 static char THIS_FILE[] = __FILE__;
 #endif
 
-static const char tsginiId[] = "$Id";
+static char tsginiId[] = "$Id: tsgini.cpp,v 1.3 2003-06-25 17:39:55 wobansa Exp $";
 /////////////////////////////////////////////////////////////////////////////
 // CTsginiApp
 

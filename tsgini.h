@@ -11,7 +11,7 @@
 #include "resource.h"		// main symbols
 #include "VornachTabelle.h"
 
-static const char tsginiHId[] = "$Id: tsgini.h,v 1.2 2003-06-22 19:16:46 wobansa Exp $";
+static char tsginiHId[] = "$Id: tsgini.h,v 1.3 2003-06-25 17:39:55 wobansa Exp $";
 
  void __stdcall LiesZeiten(LPTSTR pZeit1, LPTSTR pZeit2, LPCSTR pMannsch);
  void __stdcall LiesVornach(VORNACH_STRUCT* pVN, CString* pMannsch);
