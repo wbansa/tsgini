@@ -3,6 +3,8 @@
 //      are changed infrequently
 //
 
+static const char StdAfxHId[] = "$Id: StdAfx.h,v 1.2 2003-06-22 19:16:46 wobansa Exp $";
+
 #define VC_EXTRALEAN		// Exclude rarely-used stuff from Windows headers
 
 #include <afxwin.h>         // MFC core and standard components

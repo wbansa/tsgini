@@ -11,6 +11,8 @@
 static char THIS_FILE[] = __FILE__;
 #endif
 
+static const char ZeitPropDialogId[] = "$Id: ZeitPropDialog.cpp,v 1.2 2003-06-22 19:16:46 wobansa Exp $";
+
 /////////////////////////////////////////////////////////////////////////////
 // CZeitPropDialog property page
 

@@ -122,6 +122,17 @@ BEGIN
 END
 #endif    // APSTUDIO_INVOKED
 
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING1             """$Id: tsgini.rc,v 1.2 2003-06-22 19:16:46 wobansa Exp $"""
+END
+
 #endif    // German (Germany) resources
 /////////////////////////////////////////////////////////////////////////////
 
@@ -158,7 +169,7 @@ BEGIN
     BEGIN
         BLOCK "040904b0"
         BEGIN
-            VALUE "Comments", "Rekonstruierte Version nach 12.07.98\0"
+            VALUE "Comments", "$Id: tsgini.rc,v 1.2 2003-06-22 19:16:46 wobansa Exp $\0"
             VALUE "CompanyName", "\0"
             VALUE "FileDescription", "TSGINI DLL\0"
             VALUE "FileVersion", "1, 0, 0, 1\0"

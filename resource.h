@@ -2,6 +2,7 @@
 // Microsoft Developer Studio generated include file.
 // Used by tsgini.rc
 //
+#define IDS_STRING1                     1
 #define IDD_ZEITENDIALOG                130
 #define IDD_ZEITPROP                    131
 #define IDC_LIST1                       1000

@@ -31,9 +31,9 @@ NULL=nul
 ################################################################################
 # Begin Project
 # PROP Target_Last_Scanned "tsgini - Win32 Debug"
+CPP=cl.exe
 RSC=rc.exe
 MTL=mktyplib.exe
-CPP=cl.exe
 
 !IF  "$(CFG)" == "tsgini - Win32 Release"
 
@@ -53,15 +53,15 @@ INTDIR=e:\entw-obj+exec\tsgini\release
 ALL : "$(OUTDIR)\tsgini.dll"
 
 CLEAN : 
-	-@erase "d:\entw-obj+exec\Release\tsgini.lib"
-	-@erase "..\..\entw-obj+exec\tsgini\release\tsgini.obj"
-	-@erase "..\..\entw-obj+exec\tsgini\release\StdAfx.obj"
-	-@erase "..\..\entw-obj+exec\tsgini\release\ZeitPropDialog.obj"
-	-@erase "..\..\entw-obj+exec\tsgini\release\ZeitenDialog.obj"
-	-@erase "..\..\entw-obj+exec\tsgini\release\VornachTabelle.obj"
-	-@erase "..\..\entw-obj+exec\tsgini\release\tsgini.res"
-	-@erase "d:\entw-obj+exec\Release\tsgini.exp"
 	-@erase "..\..\entw-obj+exec\release\tsgini.dll"
+	-@erase "..\..\entw-obj+exec\tsgini\release\VornachTabelle.obj"
+	-@erase "..\..\entw-obj+exec\tsgini\release\tsgini.obj"
+	-@erase "..\..\entw-obj+exec\tsgini\release\ZeitenDialog.obj"
+	-@erase "..\..\entw-obj+exec\tsgini\release\ZeitPropDialog.obj"
+	-@erase "..\..\entw-obj+exec\tsgini\release\StdAfx.obj"
+	-@erase "..\..\entw-obj+exec\tsgini\release\tsgini.res"
+	-@erase "..\..\entw-obj+exec\Release\tsgini.lib"
+	-@erase "..\..\entw-obj+exec\Release\tsgini.exp"
 
 "$(OUTDIR)" :
     if not exist "$(OUTDIR)/$(NULL)" mkdir "$(OUTDIR)"
@@ -95,11 +95,11 @@ LINK32_FLAGS=/nologo /subsystem:windows /dll /incremental:no\
 DEF_FILE= \
 	".\tsgini.def"
 LINK32_OBJS= \
-	"$(INTDIR)/tsgini.obj" \
-	"$(INTDIR)/StdAfx.obj" \
-	"$(INTDIR)/ZeitPropDialog.obj" \
-	"$(INTDIR)/ZeitenDialog.obj" \
 	"$(INTDIR)/VornachTabelle.obj" \
+	"$(INTDIR)/tsgini.obj" \
+	"$(INTDIR)/ZeitenDialog.obj" \
+	"$(INTDIR)/ZeitPropDialog.obj" \
+	"$(INTDIR)/StdAfx.obj" \
 	"$(INTDIR)/tsgini.res"
 
 "$(OUTDIR)\tsgini.dll" : "$(OUTDIR)" $(DEF_FILE) $(LINK32_OBJS)
@@ -125,19 +125,19 @@ INTDIR=e:\entw-obj+exec\tsgini\Debug
 ALL : "$(OUTDIR)\tsgini.dll"
 
 CLEAN : 
-	-@erase "d:\entw-obj+exec\Debug\tsgini.lib"
-	-@erase "..\..\entw-obj+exec\tsgini\Debug\tsgini.obj"
-	-@erase "..\..\entw-obj+exec\tsgini\Debug\StdAfx.obj"
+	-@erase "..\..\entw-obj+exec\tsgini\Debug\vc40.pdb"
+	-@erase "..\..\entw-obj+exec\tsgini\Debug\vc40.idb"
+	-@erase "..\..\entw-obj+exec\Debug\tsgini.dll"
 	-@erase "..\..\entw-obj+exec\tsgini\Debug\ZeitPropDialog.obj"
 	-@erase "..\..\entw-obj+exec\tsgini\Debug\ZeitenDialog.obj"
 	-@erase "..\..\entw-obj+exec\tsgini\Debug\VornachTabelle.obj"
+	-@erase "..\..\entw-obj+exec\tsgini\Debug\StdAfx.obj"
+	-@erase "..\..\entw-obj+exec\tsgini\Debug\tsgini.obj"
 	-@erase "..\..\entw-obj+exec\tsgini\Debug\tsgini.res"
-	-@erase "d:\entw-obj+exec\Debug\tsgini.exp"
-	-@erase "..\..\entw-obj+exec\Debug\tsgini.dll"
 	-@erase "..\..\entw-obj+exec\Debug\tsgini.ilk"
+	-@erase "..\..\entw-obj+exec\Debug\tsgini.lib"
+	-@erase "..\..\entw-obj+exec\Debug\tsgini.exp"
 	-@erase "..\..\entw-obj+exec\tsgini\Debug\tsgini.pdb"
-	-@erase "..\..\entw-obj+exec\tsgini\Debug\vc40.pdb"
-	-@erase "..\..\entw-obj+exec\tsgini\Debug\vc40.idb"
 
 "$(OUTDIR)" :
     if not exist "$(OUTDIR)/$(NULL)" mkdir "$(OUTDIR)"
@@ -171,11 +171,11 @@ LINK32_FLAGS=/nologo /subsystem:windows /dll /incremental:yes\
 DEF_FILE= \
 	".\tsgini.def"
 LINK32_OBJS= \
-	"$(INTDIR)/tsgini.obj" \
-	"$(INTDIR)/StdAfx.obj" \
 	"$(INTDIR)/ZeitPropDialog.obj" \
 	"$(INTDIR)/ZeitenDialog.obj" \
 	"$(INTDIR)/VornachTabelle.obj" \
+	"$(INTDIR)/StdAfx.obj" \
+	"$(INTDIR)/tsgini.obj" \
 	"$(INTDIR)/tsgini.res"
 
 "$(OUTDIR)\tsgini.dll" : "$(OUTDIR)" $(DEF_FILE) $(LINK32_OBJS)
@@ -318,7 +318,7 @@ DEP_CPP_VORNA=\
 	".\ZeitPropDialog.h"\
 	
 NODEP_CPP_VORNA=\
-	".\BEL"\
+	".\pLfdZeit"\
 	
 
 "$(INTDIR)\VornachTabelle.obj" : $(SOURCE) $(DEP_CPP_VORNA) "$(INTDIR)"

@@ -4,6 +4,9 @@
 #define _ZEITPROPDIALOG_H_
 
 #include "resource.h"
+
+static const char ZeitPropDialogHId[] = "$Id: ZeitPropDialog.h,v 1.2 2003-06-22 19:16:46 wobansa Exp $";
+
 /////////////////////////////////////////////////////////////////////////////
 // CZeitPropDialog dialog
 

@@ -4,6 +4,8 @@
 #define _ZEITENDIALOG_H_
 #include "resource.h"
 
+static const char ZeitenDialogHId[] = "$Id: ZeitenDialog.h,v 1.2 2003-06-22 19:16:46 wobansa Exp $";
+ 
 /////////////////////////////////////////////////////////////////////////////
 // CZeitenDialog dialog
 
